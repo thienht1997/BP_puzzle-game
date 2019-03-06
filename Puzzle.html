@@ -1,0 +1,86 @@
+<div>
+    <img id="slider1" onclick="prev1()" src="1.jpg" width="800px" height="160px">
+
+</div>
+<br>
+<div>
+    <img id="slider2"onclick="prev2()" src="2.jpg"width="800px" height="160px" >
+
+</div>
+<br>
+<div>
+    <img id="slider3"onclick="prev3()" src="3.jpg"width="800px" height="160px">
+</div>
+<br>
+<div>
+    <img id="slider4"onclick="prev4()" src="4.jpg"width="800px" height="160px">
+</div>
+<br>
+<div>
+    <img id="slider5"onclick="prev5()" src="5.jpg"width="800px" height="160px">
+</div>
+<script>
+    var images1 = [
+    	"1.jpg",
+        "11.jpg",
+        "21.jpg"];
+    var images2 = [
+    	"2.jpg",
+        "12.jpg",
+        "22.jpg"];
+    var images3 = [
+    	"3.jpg",
+        "13.jpg",
+        "23.jpg"];
+    var images4 = [
+    	"4.jpg",
+        "14.jpg",
+        "24.jpg"];   
+    var images5 = [
+    	"5.jpg",
+        "15.jpg",
+        "25.jpg"]; 
+    var num = 0;
+
+    function prev1() {
+        var slider1 = document.getElementById("slider1");
+        num--;
+        if(num < 0) {
+            num = images1.length-1;
+        }
+        slider1.src = images1[num];
+    }
+    function prev2() {
+        var slider2 = document.getElementById("slider2");
+        num--;
+        if(num < 0) {
+            num = images2.length-1;
+        }
+        slider2.src = images2[num];
+    }
+    function prev3() {
+        var slider3 = document.getElementById("slider3");
+        num--;
+        if(num < 0) {
+            num = images3.length-1;
+        }
+        slider3.src = images3[num];
+    }
+    function prev4() {
+        var slider4 = document.getElementById("slider4");
+        num--;
+        if(num < 0) {
+            num = images4.length-1;
+        }
+        slider4.src = images4[num];
+    }
+    function prev5() {
+        var slider5 = document.getElementById("slider5");
+        num--;
+        if(num < 0) {
+            num = images5.length-1;
+        }
+        slider5.src = images5[num];
+    }
+
+</script>
